@@ -1,0 +1,8 @@
+.videa-sidebar{
+    width: 30vh;
+    height: 93vh;
+    background-color: var(--clr-videa-primary);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}

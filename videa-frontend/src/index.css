@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "Roboto";
+  src: url('style/fonts/Roboto-Regular.ttf');
+}
+@font-face {
+  font-family: "Roboto Bold";
+  src: url('style/fonts/Roboto-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Roboto Light";
+  src: url('style/fonts/Roboto-Light.ttf');
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "Roboto Thin";
+  src: url('style/fonts/Roboto-Thin.ttf');
+  font-weight: 200;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --clr-videa-primary: #312D2D;
+  --clr-videa-secondary: #C4C4C4;
+  --clr-videa-dark: #2E2E2E;
+  --clr-videa-bg: #fff;
+}
+
+body{
+  font-family:'Roboto', 'Segoe UI', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: 1px !important;
+  width: 100vw;
+  height: 100vh;
+  font-size: 1.1rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--clr-videa-bg);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App{
+  position: relative;
+}
