@@ -26,17 +26,23 @@
 }
 
 :root{
-  --clr-videa-primary: #312D2D;
-  --clr-videa-secondary: #C4C4C4;
-  --clr-videa-dark: #2E2E2E;
+  --clr-videa-primary: #2c2c2e;
+  --clr-videa-secondary: #c4c4c4;
+  --clr-videa-secondary-light: #ceced1;
+  --clr-videa-dark: #444446;
+  --clr-videa-line: #363638;
   --clr-videa-bg: #fff;
+}
+
+html{
+  width: 100%;
 }
 
 body{
   font-family:'Roboto', 'Segoe UI', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   letter-spacing: 1px !important;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   font-size: 1.1rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

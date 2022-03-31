@@ -7,18 +7,22 @@ import UserProfile from './UserProfile';
 import ButtonGroup from './ButtonGroup';
 
 const Navbar = () => {
-       return (
-           <div className='videa-navbar'>
-               <div className="videa-navbar-box flex between v-center">
-                    <Logo/>
-                    <Searchbar/>
+    return (
+        <div className='videa-navbar'>
+            <div className="videa-navbar-box flex between v-center">
+                <div className='flex center'>
+                    <Logo />
+                </div>
+                <div className='flex center w-full'>
+                    <Searchbar />
                     <ButtonGroup>
-                        <ConvertButton/>
-                        <UserProfile/>
+                        <ConvertButton />
+                        <UserProfile />
                     </ButtonGroup>
-               </div>
-           </div>
-       );
+                </div>
+            </div>
+        </div>
+    );
 }
 
 export default Navbar;
