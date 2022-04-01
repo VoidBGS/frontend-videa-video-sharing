@@ -7,8 +7,20 @@
     flex-direction: column;
 }
 
+.color-dark{
+    color: var(--clr-videa-secondary);
+}
+
 .between{
     justify-content: space-between;
+}
+
+.around{
+    justify-content: space-around;
+}
+
+.evenly{
+    justify-content: space-evenly;
 }
 
 .center{
