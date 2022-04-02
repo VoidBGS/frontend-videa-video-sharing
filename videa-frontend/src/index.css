@@ -37,6 +37,7 @@
   --line-videa-thin: 0.2em;
 
   --shadow-videa-sharp: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  --shadow-videa-medium: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 html{
@@ -79,4 +80,9 @@ code {
 .videa-link {
   text-decoration: none;
   color: var(--clr-videa-bg);
+}
+
+.videa-link-dark {
+  text-decoration: none;
+  color: var(--clr-videa-primary);
 }

@@ -55,6 +55,18 @@
     text-decoration: none;
 }
 
+.p-1{
+    padding: 0.3em;
+}
+
+.p-2{
+    padding: 0.6em;
+}
+
+.p-3{
+    padding: 0.9em;
+}
+
 .m-1{
     margin: 1em;
 }

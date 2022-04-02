@@ -38,11 +38,9 @@
 .videa-sidebar-menu-box {
     display: flex;
     flex-direction: column;
-    border-bottom: var(--line-videa-thin) ridge var(--clr-videa-line);
     margin-bottom: 25em;
     position: absolute;
     top: 8em;
-    padding-bottom: 5em;
 }
 
 .videa-footer{
@@ -56,14 +54,6 @@
     position: absolute;
     bottom: 0;
     padding-block: 0.5em;
-}
-
-.footer-icon-box {
-    border-radius: 50%;
-    background-color: var(--clr-videa-secondary);
-    width: 2em;
-    min-height: 2em;
-    cursor: pointer;
 }
 
 .footer-icon-box:hover{
