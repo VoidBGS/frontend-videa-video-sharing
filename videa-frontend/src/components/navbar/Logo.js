@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 
 const Logo = () => {
     return (
-        <div className='logo-box flex center'>
-            <Link to="./" className='videa-link'>
+        <Link to="./" className='videa-link'>
+            <div className='logo-box flex center'>
                 <img src="https://i.ibb.co/mBwgXrg/logo.png" alt="logo" border="0" className='logo' />
-            </Link>
-        </div>
+            </div>
+        </Link>
     );
 }
 
