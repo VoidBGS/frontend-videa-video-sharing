@@ -1,5 +1,6 @@
 import "./style/general.css";
 import Homepage from "./pages/homepage/Homepage";
+import VideoPage from "./pages/videopage/Videopage";
 import Sidebar from "./components/sidebar/Sidebar";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
@@ -13,6 +14,7 @@ function App() {
       <Container>
         <Routes>
           <Route path="/" element={<Homepage />} />
+          <Route path="/video/:id" element={<VideoPage />} />
         </Routes>
       </Container>
     </div>

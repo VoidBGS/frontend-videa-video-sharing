@@ -3,7 +3,7 @@ import "./container.css";
 
 const Container = (props) => {
     return (
-        <div className="videa-content-container flex center">
+        <div className="videa-content-container">
             {props.children}
         </div>
     );

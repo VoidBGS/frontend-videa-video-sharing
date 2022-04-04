@@ -15,6 +15,7 @@
     min-height: 180px;
     max-height: 180px;
     width: 100%;
+    position: relative;
 }
 
 .video-thumbnail{
@@ -43,7 +44,7 @@
 }
 
 .video-title{
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .video-title:hover{
@@ -56,4 +57,14 @@
 
 .video-views{
     padding-inline: 1em;
+}
+.video-length{
+    position: absolute;
+    background-color: #000;
+    opacity: 0.90;
+    color: var(--clr-videa-bg);
+    font-size: 0.7rem;
+    bottom: 0;
+    right: 0;
+    z-index: 10000;
 }

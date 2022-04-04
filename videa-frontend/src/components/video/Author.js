@@ -1,13 +1,18 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import ImageBox from '../ImageBox/ImageBox';
 
+const Author = ({Author}) => {
+    const[author, setAuthor] = useState({});
 
-const Author = () => {
-    return (
+    useEffect(()=>{
+        setAuthor(Author);
+    },[]);
+
+    return author ? (
         <div className="author-profile">
-            <ImageBox info={{src:"https://i.ibb.co/bmjgh7R/thumbnail-Store.png", isProfile: true, name:"Kristian"}}/>
+            <ImageBox info={{src:author.profilePicSrc, isProfile: true, name:author.name}}/>
         </div>
-    );
+    ) : "";
 }
 
 export default Author;
