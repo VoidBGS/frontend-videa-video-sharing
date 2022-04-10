@@ -2,7 +2,6 @@ import React,{useState, useEffect} from "react";
 import Author from "./Author";
 import Title from "./Title";
 import UploadedOn from "./UploadedOn";
-import Video from "./Video";
 import Views from "./Views";
 import "./video.css";
 import Thumbnail from "./Thumbnail";
@@ -10,24 +9,23 @@ import Thumbnail from "./Thumbnail";
 const VideoBox = ({Video}) => {
     const [source, setSource] = useState("");
     const [title, setTitle] = useState("");
-    const [link, setLink] = useState("");
+    const [id, setId] = useState("");
     const [author, setAuthor] = useState({});
 
     useEffect(()=>{
-        console.log(Video);
-        setSource(Video.source);
+        setSource(Video.thumbnail);
         setTitle(Video.title);
-        setLink(Video.link);
+        setId(Video.id);
         setAuthor(Video.author);
-    },[author, source, title, link]);
+    },[author, source, title, id]);
 
-    return source && title && link ? (
-        <div className="videa-video-container">
+    return source && title && id ? (
+        <div className="videa-video-container mx-1">
             <div className="videa-video-box">
-                <Thumbnail source={source} url={link}/>
+                <Thumbnail source={source} Id={id} VidLength={Video.length}/>
                 <div className="flex p-1">
                     <Author Author={author}/>
-                    <Title info={{ name: title, link: link }} />
+                    <Title info={{ name: title, id: id }} />
                 </div>
                 <div className="video-likes-views-box flex w-full">
                     <Views />

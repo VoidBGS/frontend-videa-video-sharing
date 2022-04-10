@@ -19,6 +19,10 @@
     color: var(--clr-videa-secondary);
 }
 
+.color-white{
+    color: var(--clr-videa-bg);
+}
+
 .between{
     justify-content: space-between;
 }

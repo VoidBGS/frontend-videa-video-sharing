@@ -5,6 +5,7 @@ import Logo from './Logo';
 import Searchbar from './Searchbar';
 import UserProfile from './UserProfile';
 import ButtonGroup from './ButtonGroup';
+import UploadVideoButton from './UploadVideoButton';
 
 const Navbar = () => {
     return (
@@ -16,6 +17,7 @@ const Navbar = () => {
                 <div className='flex center w-full'>
                     <Searchbar />
                     <ButtonGroup>
+                        <UploadVideoButton />
                         <ConvertButton />
                         <UserProfile />
                     </ButtonGroup>

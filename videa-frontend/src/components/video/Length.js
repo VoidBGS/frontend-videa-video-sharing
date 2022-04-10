@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Length = ({ time }) => {
-    return time ? (
+const Length = ({ vidLength }) => {
+    return vidLength ? (
         <div className='video-length p-1'>
-            {time}
+            {vidLength}
         </div>
     ) : (
         <div className='video-length p-1'>

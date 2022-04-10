@@ -5,6 +5,7 @@ import Sidebar from "./components/sidebar/Sidebar";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import Container from "./components/container/Container";
+import ToDo from "./pages/ToDo";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Container>
         <Routes>
           <Route path="/" element={<Homepage />} />
+          <Route path="/ToDo" element={<ToDo/>} />
           <Route path="/video/:id" element={<VideoPage />} />
         </Routes>
       </Container>

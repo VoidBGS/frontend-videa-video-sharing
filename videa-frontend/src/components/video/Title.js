@@ -4,16 +4,16 @@ import {cropIfExceed} from "../../func/titleCrop";
 
 const Title = ({ info }) => {
     const [title, setTitle] = useState("");
-    const [link, setLink] = useState("");
+    const [id, setId] = useState("");
     const allowedLength = 60;
 
     useEffect(() => {
         setTitle(info.name);
-        setLink(info.link);
-    }, [title, link]);
+        setId(info.id);
+    }, [title, id]);
 
     return title ? (
-        <Link to={link} className="videa-link-dark video-title">
+        <Link to={"video/" + id} className="videa-link-dark video-title">
             <div className="font-bold">
                 {cropIfExceed(title, allowedLength)}
             </div>

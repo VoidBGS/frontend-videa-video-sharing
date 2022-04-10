@@ -43,7 +43,7 @@
 
 .main-video-like-button:hover{
     background-color: var(--clr-videa-secondary-ligher);
-    outline:1px solid rgb(31, 165, 255);
+    outline:1px solid var(--clr-videa-outline);
     color: var(--clr-videa-secondary);
 }
 
